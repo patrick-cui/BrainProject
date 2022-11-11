@@ -64,7 +64,7 @@ export default function ExplorePage2(props) {
                 <Grid item xs={12} md={3}>
                     <Box sx={{ minWidth: 120 }}>
                         <FormControl fullWidth>
-                            <InputLabel id="gender-label">Sex</InputLabel>
+                            <InputLabel id="gender-label">Select Sex</InputLabel>
                             <Select
                                 labelId="gender-label"
                                 id="gender-select"
@@ -82,7 +82,7 @@ export default function ExplorePage2(props) {
                 <Grid item xs={12} md={3}>
                     <Box sx={{ minWidth: 120 }}>
                         <FormControl fullWidth>
-                            <InputLabel id="MM-label">Morphometric Measure</InputLabel>
+                            <InputLabel id="MM-label">Select Morphometric Measure</InputLabel>
                             <Select
                                 labelId="MM-label"
                                 id="MM-select"

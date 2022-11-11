@@ -15,7 +15,7 @@ export default function TutorialPage3(props) {
                 <Link to='/tutorial' className="tutorial1" style={{width: "200px"}}><span>Subcortical Volume</span></Link>
                 <Link to='/tutorial2'className="tutorial2" style={{width: "200px"}}><span>Cortical Thickness</span></Link>
                 <Link to='/tutorial3'className="tutorial3" style={{width: "200px"}}><span>Surface area</span></Link>
-                <Link to='/tutorial4'className="tutorial4" style={{width: "200px"}}><span>brainAge</span></Link>
+                <Link to='/tutorial4'className="tutorial4" style={{width: "200px"}}><span>brainAGE</span></Link>
                 <div className="animation start-area"></div>
             </nav>
             <Grid container spacing={3}>

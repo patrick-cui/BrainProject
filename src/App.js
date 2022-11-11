@@ -14,6 +14,7 @@ import ModelPage2 from './Model/ModelPage2';
 import TutorialPage3 from './Tutorial/TutorialPage3';
 import Home from './Home';
 import BrainAgeModelPage from './BrainAge/BrainAgeModel';
+import BrainAgeModel2Page from './BrainAge/BrainAgeModel2';
 import TutorialPage4 from './Tutorial/TutorialPage4';
 
 function App() {
@@ -65,6 +66,9 @@ function App() {
                     </Route>
                     <Route path="/brainAGE">
                         <BrainAgeModelPage/>
+                    </Route>
+                    <Route path="/brainAGE2">
+                        <BrainAgeModel2Page/>
                     </Route>
                     <Route path='/engima' component={() => {
                         window.location.href = 'https://enigma.ini.usc.edu/';
