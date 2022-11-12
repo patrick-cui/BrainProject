@@ -1,17 +1,14 @@
-//explore selectsex
-
-
 import "./brainAge.css";
 
-import { 
-    FormControl, 
-    FormControlLabel, 
-    RadioGroup, 
-    Switch, 
-    Box, 
+import {
+    FormControl,
+    FormControlLabel,
+    RadioGroup,
+    Switch,
+    Box,
     InputLabel,
     Select,
-    MenuItem, 
+    MenuItem,
 } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
 import React from 'react';
@@ -29,14 +26,28 @@ export default function BrainAgeModel2Page(props) {
     const [age, setAge] = React.useState('');
     const handleAgeChange = (event) => {
         setAge(event.target.value);
-        
+
     };
 
     function renderUrl() {
-        return "https://brainage.shinyapps.io/brainage_" + gender + "_decade" + age + "/";
+        if (gender == "female") {
+            var ageInt = parseInt(age);
+            if (ageInt < 6) {
+                return "https://brainage-female.shinyapps.io/brainage_female_decade" + age + "/";
+            }
+            return "https://brainage-female2.shinyapps.io/brainage_female_decade" + age + "/";
+        }
+        if (age == "1" || age == "2" || age == "3") {
+            return "https://brainage.shinyapps.io/brainage_male_decade" + age + "/";
+        }
+        if (age == "9") {
+            return "https://brainage-male2.shinyapps.io/brainage_male_decade9/";
+        }
+        return "https://brainage-male.shinyapps.io/brainage_male_decade" + age + "/";
+
     }
 
-    return(
+    return (
         <sections>
             <Header></Header>
             <nav>
@@ -44,11 +55,11 @@ export default function BrainAgeModel2Page(props) {
                 <Link to='/brainAge2'><span>Generate BrainAGE for different age groups from your sample</span></Link>
                 <div className="animation start-ownData"></div>
             </nav>
-        
-            <Grid container spacing={3} style={{alignItems: 'center', marginTop: "0.2rem"}}>
+
+            <Grid container spacing={3} style={{ alignItems: 'center', marginTop: "0.2rem" }}>
                 <Grid item xs={12} md={1}></Grid>
 
-                <Grid item xs={12} md={1} style={{marginLeft: "30px"}}>
+                <Grid item xs={12} md={1} style={{ marginLeft: "30px" }}>
                     <Box sx={{ minWidth: 120 }}>
                         <FormControl fullWidth>
                             <InputLabel id="MM-label">Select Sex</InputLabel>
@@ -66,7 +77,7 @@ export default function BrainAgeModel2Page(props) {
                     </Box>
                 </Grid>
 
-                <Grid item xs={12} md={1} style={{marginLeft: "30px"}}>
+                <Grid item xs={12} md={1} style={{ marginLeft: "30px" }}>
                     <Box sx={{ minWidth: 120 }}>
                         <FormControl fullWidth>
                             <InputLabel id="MM-label">Select Age</InputLabel>
@@ -92,13 +103,13 @@ export default function BrainAgeModel2Page(props) {
                 </Grid>
 
             </Grid>
-            
- 
-            
-            <Grid container spacing={3} style={{alignItems: 'center'}}>
+
+
+
+            <Grid container spacing={3} style={{ alignItems: 'center' }}>
                 <Grid item xs={12} md={1}></Grid>
                 <Grid item xs={12} md={10}>
-                    <div style={{alignItems: 'center'}}>
+                    <div style={{ alignItems: 'center' }}>
                         <Iframe url={renderUrl()} width="100%" height="1000px"></Iframe>
                     </div>
                 </Grid>
