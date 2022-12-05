@@ -1,10 +1,10 @@
-import "./explore.css"
+import "./explore.css";
 
 import Grid from '@material-ui/core/Grid';
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import Header from '../Home/Header';
+import Header from '../Home/Header'; 23808189;
 
 export default function ExplorePage(props) {
 
@@ -14,14 +14,14 @@ export default function ExplorePage(props) {
             <nav>
                 <Link to='/explore'><span>CentileBrain Data Vault</span></Link>
                 <Link to='/explore2'><span>Visualize Regional Age-Related Curves</span></Link>
-                <div className="animation start-centileModel"></div>
+                <div className="animation start-a"></div>
             </nav>
-            <br/>
-            <br/>
+            <br />
+            <br />
             <Grid container spacing={3} alignItems={"center"}>
                 <Grid item xs={12} md={1}></Grid>
                 <Grid item xs={12} md={5}>
-                    <img src="https://raw.githubusercontent.com/yixuanQicq/BrainProject/main/src/Explore/data/age_distribution_new.jpg" width="100%"/>
+                    <img src="https://raw.githubusercontent.com/yixuanQicq/BrainProject/main/src/Explore/data/age_distribution_new.jpg" width="100%" />
                 </Grid>
                 <Grid item xs={12} md={5}>
                     <img src="https://raw.githubusercontent.com/yixuanQicq/BrainProject/main/src/Explore/data/CentileBrain_Map.jpg" width="100%" />
@@ -41,15 +41,15 @@ export default function ExplorePage(props) {
             <Grid container spacing={3} alignItems={"center"}>
                 <Grid item xs={12} md={1}></Grid>
                 <Grid item xs={12} md={5}>
-                    <h5>Information on the datasets can be found  <a href="https://docs.google.com/document/d/1R1eaPS7wbl_C4iu980S6rJDNpmC6jfzrhv0l1CXDty0/edit?usp=sharing" target="_blank" style={{color: "black"}}>here</a>.</h5>
+                    <h5>Information on the datasets can be found  <a href="https://docs.google.com/document/d/1R1eaPS7wbl_C4iu980S6rJDNpmC6jfzrhv0l1CXDty0/edit?usp=sharing" target="_blank" style={{ color: "black" }}>here</a>.</h5>
                 </Grid>
                 <Grid item xs={12} md={5}></Grid>
                 <Grid item xs={12} md={1}></Grid>
             </Grid>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
+            <br />
+            <br />
+            <br />
+            <br />
         </sections>
     );
 }

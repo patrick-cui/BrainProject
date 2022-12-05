@@ -56,12 +56,12 @@ const featuresCN = [
 ];
 
 const pointPos = [
-    { x: -30*3, y: -10*3 },
-    { x: 20*3, y: -20*3 },
-    { x: -65*3, y: 15*3 },
-    { x: -45*3, y: 80*3 },
-    { x: 35*3, y: 5*3 },
-    { x: 50*3, y: 50*3, opacity: 0.2 },
+    { x: -30 * 3, y: -10 * 3 },
+    { x: 20 * 3, y: -20 * 3 },
+    { x: -65 * 3, y: 15 * 3 },
+    { x: -45 * 3, y: 80 * 3 },
+    { x: 35 * 3, y: 5 * 3 },
+    { x: 50 * 3, y: 50 * 3, opacity: 0.2 },
 ];
 
 class FeaturesPage extends React.PureComponent {
@@ -158,9 +158,8 @@ class FeaturesPage extends React.PureComponent {
                         <div
                             className="page1-image"
                             style={{
-                                boxShadow: `${
-                                    isHover ? '0 12px 24px' : '0 6px 12px'
-                                } ${item.shadowColor}`,
+                                boxShadow: `${isHover ? '0 12px 24px' : '0 6px 12px'
+                                    } ${item.shadowColor}`,
                             }}
                         >
                             <Link to={item.link}><img className="page1-image-img"
@@ -209,7 +208,7 @@ class FeaturesPage extends React.PureComponent {
                         <div className="title-line" />
                     </div>
                     {/*<OverPack>{children}</OverPack>*/}
-                    <Features/>
+                    <Features />
                 </div>
             </div>
         );

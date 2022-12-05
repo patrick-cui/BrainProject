@@ -1,8 +1,8 @@
-import "./model.css"
+import "./model.css";
 
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import Header from '../Home/Header';
@@ -25,9 +25,9 @@ export default function ModelPage2(props) {
                 <Grid item xs={12} md={12}>
                     <Grid container spacing={3} direction="row" justify="center" alignItems="center">
                         <Grid>
-                            <br/>
+                            <br />
                             <h1 align="center">CentileBrain Model</h1>
-                            <br/>
+                            <br />
                             <Model_2_html></Model_2_html>
                         </Grid>
                     </Grid>

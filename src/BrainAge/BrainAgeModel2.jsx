@@ -89,14 +89,14 @@ export default function BrainAgeModel2Page(props) {
                                 onChange={handleAgeChange}
                             >
                                 <MenuItem value={"1"}>3-10</MenuItem>
-                                <MenuItem value={"2"}>11-20</MenuItem>
-                                <MenuItem value={"3"}>21-30</MenuItem>
-                                <MenuItem value={"4"}>31-40</MenuItem>
-                                <MenuItem value={"5"}>41-50</MenuItem>
-                                <MenuItem value={"6"}>51-60</MenuItem>
-                                <MenuItem value={"7"}>61-70</MenuItem>
-                                <MenuItem value={"8"}>71-80</MenuItem>
-                                <MenuItem value={"9"}>81-90</MenuItem>
+                                <MenuItem value={"2"}>10-20</MenuItem>
+                                <MenuItem value={"3"}>20-30</MenuItem>
+                                <MenuItem value={"4"}>30-40</MenuItem>
+                                <MenuItem value={"5"}>40-50</MenuItem>
+                                <MenuItem value={"6"}>50-60</MenuItem>
+                                <MenuItem value={"7"}>60-70</MenuItem>
+                                <MenuItem value={"8"}>70-80</MenuItem>
+                                <MenuItem value={"9"}>80-90</MenuItem>
                             </Select>
                         </FormControl>
                     </Box>

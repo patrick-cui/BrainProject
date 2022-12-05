@@ -1,5 +1,5 @@
 /*eslint-disable */
-import "./explore.css"
+import "./explore.css";
 
 import {
     Box,
@@ -13,7 +13,7 @@ import {
 } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import Header from '../Home/Header';
@@ -55,10 +55,10 @@ export default function ExplorePage2(props) {
             <nav>
                 <Link to='/explore'><span>CentileBrain Data Vault</span></Link>
                 <Link to='/explore2'><span>Visualize Regional Age-Related Curves</span></Link>
-                <div className="animation start-ownData"></div>
+                <div className="animation start-b"></div>
             </nav>
-            <br/>
-            <br/>
+            <br />
+            <br />
             <Grid container spacing={3} alignItems={"center"}>
                 <Grid item xs={12} md={1}> </Grid>
                 <Grid item xs={12} md={3}>
@@ -238,11 +238,11 @@ export default function ExplorePage2(props) {
                     </FormControl>
                 </Grid>
 
-                <Grid item xs={12} md={1}/>
+                <Grid item xs={12} md={1} />
             </Grid>
 
             <Graphs gender={gender} value={volumes} thickness={thickness} area={area} MFPCurve={MFPCurve} morphometric={morphometric}
-                    hidden={morphometric !== "volumes" && morphometric !== 'area' && morphometric !== "thickness"}></Graphs>
+                hidden={morphometric !== "volumes" && morphometric !== 'area' && morphometric !== "thickness"}></Graphs>
 
         </sections>
     );
