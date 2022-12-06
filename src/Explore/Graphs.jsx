@@ -86,7 +86,7 @@ export default function Graphs(props) {
     }
 
     function renderSwitchRight() {
-        let filePath = "https://raw.githubusercontent.com/yixuanQicq/BrainProject/main/";
+        let filePath = "https://raw.githubusercontent.com/patrick-cui/BrainProject/main/";
         if (props.gender === ``) {
             return "";
         }
