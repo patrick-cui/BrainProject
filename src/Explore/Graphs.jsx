@@ -14,7 +14,7 @@ export default function Graphs(props) {
     }
 
     function renderSwitchLeft() {
-        let filePath = "https://raw.githubusercontent.com/yixuanQicq/BrainProject/main/";
+        let filePath = "https://raw.githubusercontent.com/patrick-cui/BrainProject/main/";
         //let filePath = "";
         if (props.gender === ``) {
             return "";
@@ -29,10 +29,10 @@ export default function Graphs(props) {
                 filePath = filePath + "src/Explore/data/sv/femaleCentile";
             } if (props.gender === "male" && props.MFPCurve) {
                 filePath = filePath + "src/Explore/data/sv/maleMFP";
-            } if (props.gender === "male" && !props.MFPCurve){
-                filePath =  filePath + "src/Explore/data/sv/maleCentile";
+            } if (props.gender === "male" && !props.MFPCurve) {
+                filePath = filePath + "src/Explore/data/sv/maleCentile";
             }
-            switch(props.value) {
+            switch (props.value) {
                 case 'thalamus':
                     return filePath + '/1.html';
                 case 'caudate':
@@ -62,8 +62,8 @@ export default function Graphs(props) {
                 filePath = filePath + "src/Explore/data/ct/femaleCentile";
             } if (props.gender === "male" && props.MFPCurve) {
                 filePath = filePath + "src/Explore/data/ct/maleMFP";
-            } if (props.gender === "male" && !props.MFPCurve){
-                filePath =  filePath + "src/Explore/data/ct/maleCentile";
+            } if (props.gender === "male" && !props.MFPCurve) {
+                filePath = filePath + "src/Explore/data/ct/maleCentile";
             }
             console.log(filePath + "/" + props.thickness + ".html");
             return filePath + "/" + props.thickness + ".html";
@@ -77,8 +77,8 @@ export default function Graphs(props) {
                 filePath = filePath + "src/Explore/data/ca/femaleCentile";
             } if (props.gender === "male" && props.MFPCurve) {
                 filePath = filePath + "src/Explore/data/ca/maleMFP";
-            } if (props.gender === "male" && !props.MFPCurve){
-                filePath =  filePath + "src/Explore/data/ca/maleCentile";
+            } if (props.gender === "male" && !props.MFPCurve) {
+                filePath = filePath + "src/Explore/data/ca/maleCentile";
             }
             console.log(filePath + "/" + props.area + ".html");
             return filePath + "/" + props.area + ".html";
@@ -100,10 +100,10 @@ export default function Graphs(props) {
                 filePath = filePath + "src/Explore/data/sv/femaleCentile";
             } if (props.gender === "male" && props.MFPCurve) {
                 filePath = filePath + "src/Explore/data/sv/maleMFP";
-            } if (props.gender === "male" && !props.MFPCurve){
-                filePath =  filePath + "src/Explore/data/sv/maleCentile";
+            } if (props.gender === "male" && !props.MFPCurve) {
+                filePath = filePath + "src/Explore/data/sv/maleCentile";
             }
-            switch(props.value) {
+            switch (props.value) {
                 case 'thalamus':
                     return filePath + '/2.html';
                 case 'caudate':
@@ -132,11 +132,11 @@ export default function Graphs(props) {
                 filePath = filePath + "src/Explore/data/ct/femaleCentile";
             } if (props.gender === "male" && props.MFPCurve) {
                 filePath = filePath + "src/Explore/data/ct/maleMFP";
-            } if (props.gender === "male" && !props.MFPCurve){
-                filePath =  filePath + "src/Explore/data/ct/maleCentile";
+            } if (props.gender === "male" && !props.MFPCurve) {
+                filePath = filePath + "src/Explore/data/ct/maleCentile";
             }
             let value = 34 + parseInt(props.thickness);
-            console.log(filePath + "/" + value.toString() + ".html")
+            console.log(filePath + "/" + value.toString() + ".html");
             return filePath + "/" + value + ".html";
         } else {
             if (props.area === '') {
@@ -148,44 +148,44 @@ export default function Graphs(props) {
                 filePath = filePath + "src/Explore/data/ca/femaleCentile";
             } if (props.gender === "male" && props.MFPCurve) {
                 filePath = filePath + "src/Explore/data/ca/maleMFP";
-            } if (props.gender === "male" && !props.MFPCurve){
-                filePath =  filePath + "src/Explore/data/ca/maleCentile";
+            } if (props.gender === "male" && !props.MFPCurve) {
+                filePath = filePath + "src/Explore/data/ca/maleCentile";
             }
             let value = 34 + parseInt(props.area);
-            console.log(filePath + "/" + value.toString() + ".html")
+            console.log(filePath + "/" + value.toString() + ".html");
             return filePath + "/" + value.toString() + ".html";
         }
 
     }
 
     function renderHtmlLeft(url) {
-        if(url) {
+        if (url) {
             fetch(url).then(async fileText => html1 = await fileText.text()).then(() => {
-                    document.getElementsByTagName('iframe')[0].src=URL.createObjectURL(new Blob([html1], {type :'text/html'}));
-                }
+                document.getElementsByTagName('iframe')[0].src = URL.createObjectURL(new Blob([html1], { type: 'text/html' }));
+            }
             );
         }
     }
 
     function renderHtmlRight(url) {
-        if(url) {
+        if (url) {
             fetch(url).then(async fileText => html2 = await fileText.text()).then(() => {
-                    document.getElementsByTagName('iframe')[1].src=URL.createObjectURL(new Blob([html2], {type :'text/html'}));
-                }
+                document.getElementsByTagName('iframe')[1].src = URL.createObjectURL(new Blob([html2], { type: 'text/html' }));
+            }
             );
         }
     }
 
-    return(
-        <Grid container spacing={3} style={{alignItems: 'center', marginTop: "2rem"}}>
+    return (
+        <Grid container spacing={3} style={{ alignItems: 'center', marginTop: "2rem" }}>
             <Grid item xs={12} md={1}></Grid>
             <Grid item xs={12} md={5}>
-                <div style={{alignItems: 'center'}}>
+                <div style={{ alignItems: 'center' }}>
                     <Iframe url={renderHtmlLeft(renderSwitchLeft())} width={renderWidth()} height="450px"></Iframe>
                 </div>
             </Grid>
             <Grid item xs={12} md={5}>
-                <div style={{alignItems: 'center'}}>
+                <div style={{ alignItems: 'center' }}>
                     <Iframe url={renderHtmlRight(renderSwitchRight())} width={renderWidth()} height="450px"></Iframe>
                 </div>
             </Grid>
