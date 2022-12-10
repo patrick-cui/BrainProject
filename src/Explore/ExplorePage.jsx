@@ -38,6 +38,7 @@ export default function ExplorePage(props) {
                 </Grid>
                 <Grid item xs={12} md={1}></Grid>
             </Grid>
+            {/**
             <Grid container spacing={3} alignItems={"center"}>
                 <Grid item xs={12} md={1}></Grid>
                 <Grid item xs={12} md={5}>
@@ -46,6 +47,7 @@ export default function ExplorePage(props) {
                 <Grid item xs={12} md={5}></Grid>
                 <Grid item xs={12} md={1}></Grid>
             </Grid>
+            */}
             <br />
             <br />
             <br />
