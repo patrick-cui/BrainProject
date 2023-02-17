@@ -231,10 +231,10 @@ male_age &lt;- predict(svmRadial_male,unseen_data[unseen_data$SEX==&quot;M&quot;
 #get the brainage in the testing set
 male_error &lt;- predict(svmRadial_male,unseen_data[unseen_data$SEX==&quot;M&quot;,imagvar])-unseen_data[unseen_data$SEX==&quot;M&quot;,]$AGE
 #get the corrected age in the testing set
-corage_male &lt;- (predict(svmRadial_male,unseen_data[unseen_data$SEX==&quot;M&quot;,imagvar])-(summary(lmfit_male)
+male_adj_age &lt;- (predict(svmRadial_male,unseen_data[unseen_data$SEX==&quot;M&quot;,imagvar])-(summary(lmfit_male)
             [[&quot;coefficients&quot;]][1]+(summary(lmfit_male)[[&quot;coefficients&quot;]][2]*(unseen_data[unseen_data$SEX==&quot;M&quot;,]$AGE))))
 #get the corrected brainage in the testing set
-male_adjerror &lt;- corage_male-(unseen_data[unseen_data$SEX==&quot;M&quot;,]$AGE)
+male_adjerror &lt;- male_adj_age-(unseen_data[unseen_data$SEX==&quot;M&quot;,]$AGE)
 #females (similar to males)
 predage_female &lt;- aggregate(as.numeric(svmRadial_female$pred$pred),by=list(svmRadial_female$pred$rowIndex),mean)[,2]
 age_female &lt;- aggregate(as.numeric(svmRadial_female$pred$obs),by=list(svmRadial_female$pred$rowIndex),mean)[,2]
@@ -243,16 +243,19 @@ lmfit_female &lt;- lm(pad_female~aggregate(as.numeric(svmRadial_female$pred$obs)
                                         by=list(svmRadial_female$pred$rowIndex),mean)[,2])
 female_error &lt;- predict(svmRadial_female,unseen_data[unseen_data$SEX==&quot;F&quot;,imagvar])-unseen_data[unseen_data$SEX==&quot;F&quot;,]$AGE
 female_age &lt;- predict(svmRadial_female,unseen_data[unseen_data$SEX==&quot;F&quot;,imagvar])
-corage_female &lt;- (predict(svmRadial_female,unseen_data[unseen_data$SEX==&quot;F&quot;,imagvar])-(summary(lmfit_female)
+female_adj_age &lt;- (predict(svmRadial_female,unseen_data[unseen_data$SEX==&quot;F&quot;,imagvar])-(summary(lmfit_female)
              [[&quot;coefficients&quot;]][1]+(summary(lmfit_female)[[&quot;coefficients&quot;]][2]*(unseen_data[unseen_data$SEX==&quot;F&quot;,]$AGE))))
-female_adjerror &lt;- corage_female-(unseen_data[unseen_data$SEX==&quot;F&quot;,]$AGE)</code></pre>
+female_adjerror &lt;- female_adj_age-(unseen_data[unseen_data$SEX==&quot;F&quot;,]$AGE)</code></pre>
 <p>Save the results.</p>
-<pre class="r"><code>write.csv(male_age,&quot;unseen_data_predagemale.csv&quot;)
-write.csv(male_error,&quot;unseen_data_errormale.csv&quot;)
-write.csv(male_adjerror,&quot;unseen_data_adjerrormale.csv&quot;)
-write.csv(female_age,&quot;unseen_data_predagefemale.csv&quot;)
-write.csv(female_error,&quot;unseen_data_errorfemale.csv&quot;)
-write.csv(female_adjerror,&quot;unseen_data_adjerrorfemale.csv&quot;)</code></pre>
+<pre class="r"><code>write.csv(male_age,&quot;MR_predicted_age_male.csv&quot;)
+write.csv(male_adj_age,&quot;Adjusted_MR_predicted_age_male.csv&quot;)
+write.csv(male_error,&quot;BrainAGE_male.csv&quot;)
+write.csv(male_adjerror,&quot;Adjusted_BrainAGE_male.csv&quot;)
+write.csv(female_age,&quot;MR_predicted_age_female.csv&quot;)
+write.csv(female_adj_age,&quot;Adjusted_MR_predicted_age_female.csv&quot;)
+write.csv(female_error,&quot;BrainAGE_female.csv&quot;)
+write.csv(female_adjerror,&quot;Adjusted_BrainAGE_female.csv&quot;)
+</code></pre>
 </div>
 <div id="section" class="section level2">
 <h2></h2>

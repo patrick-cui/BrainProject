@@ -42,6 +42,18 @@ export default function PublicationsPage(props) {
                 "Sex differences in predictors and regional patterns of brain age gap estimates. Hum Brain Mapp. 2022; doi: 10.1002/hbm.25983",
             link: "https://pubmed.ncbi.nlm.nih.gov/35790053/",
             id: uuid()
+        },
+        {
+            info: "Ge R, Yu Y, Qi Y, Haas S, etc, Thompson P, Frangou S. \ " +
+                "Normative Modeling of Brain Morphometry Across the Lifespan using CentileBrain: Algorithm Benchmarking and Model Optimization. 2023; doi: 10.1101/2023.01.30.523509",
+            link: "https://www.biorxiv.org/content/10.1101/2023.01.30.523509v1",
+            id: uuid()
+        },
+        {
+            info: "Haas S, Ge R, etc, Frangou S. \ " +
+                "Normative modeling of brain morphometry in Clinical High-Risk for Psychosis. 2023; doi: 10.1101/2023.01.17.523348",
+            link: "https://www.biorxiv.org/content/10.1101/2023.01.17.523348v1",
+            id: uuid()
         }
     ]
 
