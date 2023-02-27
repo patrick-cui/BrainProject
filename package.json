@@ -34,7 +34,7 @@
     "uuid": "^8.3.2"
   },
   "devDependencies": {
-    "atool-build": "^1.0.2",
+    "atool-build": "^1.0.8",
     "atool-test-mocha": "^0.1.7",
     "babel-eslint": "^8.0.2",
     "babel-plugin-import": "^1.6.2",
