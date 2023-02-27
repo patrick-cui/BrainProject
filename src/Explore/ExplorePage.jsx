@@ -38,16 +38,16 @@ export default function ExplorePage(props) {
                 </Grid>
                 <Grid item xs={12} md={1}></Grid>
             </Grid>
-            {/**
+
             <Grid container spacing={3} alignItems={"center"}>
                 <Grid item xs={12} md={1}></Grid>
                 <Grid item xs={12} md={5}>
-                    <h5>Information on the datasets can be found  <a href="https://docs.google.com/document/d/1R1eaPS7wbl_C4iu980S6rJDNpmC6jfzrhv0l1CXDty0/edit?usp=sharing" target="_blank" style={{ color: "black" }}>here</a>.</h5>
+                    <h5>Information on the datasets can be found  <a href="https://docs.google.com/spreadsheets/d/1d-1bfKskhPSkfFnZXA68h9S7Lla6NRVU/edit?usp=sharing&ouid=108618372729677349330&rtpof=true&sd=true" target="_blank" style={{ color: "black" }}>here</a>.</h5>
                 </Grid>
                 <Grid item xs={12} md={5}></Grid>
                 <Grid item xs={12} md={1}></Grid>
             </Grid>
-            */}
+
             <br />
             <br />
             <br />

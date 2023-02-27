@@ -88,15 +88,15 @@ export default function BrainAgeModel2Page(props) {
                                 label="2-10"
                                 onChange={handleAgeChange}
                             >
-                                <MenuItem value={"1"}>3&le;age&lt;10</MenuItem>
-                                <MenuItem value={"2"}>10&le;age&lt;20</MenuItem>
-                                <MenuItem value={"3"}>20&le;age&lt;30</MenuItem>
-                                <MenuItem value={"4"}>30&le;age&lt;40</MenuItem>
-                                <MenuItem value={"5"}>40&le;age&lt;50</MenuItem>
-                                <MenuItem value={"6"}>50&le;age&lt;60</MenuItem>
-                                <MenuItem value={"7"}>60&le;age&lt;70</MenuItem>
-                                <MenuItem value={"8"}>70&le;age&lt;80</MenuItem>
-                                <MenuItem value={"9"}>80&le;age&lt;90</MenuItem>
+                                <MenuItem value={"1"}>5&le;age&le;10</MenuItem>
+                                <MenuItem value={"2"}>10&lt;age&le;20</MenuItem>
+                                <MenuItem value={"3"}>20&lt;age&le;30</MenuItem>
+                                <MenuItem value={"4"}>30&lt;age&le;40</MenuItem>
+                                <MenuItem value={"5"}>40&lt;age&le;50</MenuItem>
+                                <MenuItem value={"6"}>50&lt;age&le;60</MenuItem>
+                                <MenuItem value={"7"}>60&lt;age&le;70</MenuItem>
+                                <MenuItem value={"8"}>70&lt;age&le;80</MenuItem>
+                                <MenuItem value={"9"}>80&lt;age&le;90</MenuItem>
                             </Select>
                         </FormControl>
                     </Box>
