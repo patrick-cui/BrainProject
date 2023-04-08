@@ -67,9 +67,11 @@ function App() {
                     <Route path="/brainAGE">
                         <BrainAgeModelPage/>
                     </Route>
+                    {/*
                     <Route path="/brainAGE2">
                         <BrainAgeModel2Page/>
                     </Route>
+                    */}
                     <Route path='/engima' component={() => {
                         window.location.href = 'https://enigma.ini.usc.edu/';
                         return null;
