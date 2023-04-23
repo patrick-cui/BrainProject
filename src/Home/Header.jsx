@@ -1,4 +1,4 @@
-import { Col, Icon,Menu, Row } from 'antd';
+import { Col, Icon, Menu, Row } from 'antd';
 import enquire from 'enquire.js';
 import React from 'react';
 import { Link } from 'react-router-dom';
@@ -41,7 +41,12 @@ class Header extends React.Component {
         const { menuMode, showMobileMenu } = this.state;
 
         const menu = (
-            <Menu mode={menuMode} id="nav" key="nav" onClick={this.collapseMobileMenu}>
+            <Menu
+                mode={menuMode}
+                id="nav"
+                key="nav"
+                onClick={this.collapseMobileMenu}
+            >
                 <Menu.Item key="home">
                     <a>Home</a>
                     <Link to="/">Home</Link>
@@ -93,8 +98,7 @@ class Header extends React.Component {
 
         return (
             <div id="header" className="header">
-                {menuMode === 'inline' &&
-                !showMobileMenu && (
+                {menuMode === 'inline' && !showMobileMenu && (
                     <Icon
                         type="bars"
                         className="nav-phone-icon"
@@ -105,7 +109,9 @@ class Header extends React.Component {
                 <Row>
                     <Col xxl={20} xl={20} lg={20} md={16} sm={0} xs={0}>
                         <div className="header-meta">
-                            {menuMode === 'horizontal' ? <div id="menu">{menu}</div> : null}
+                            {menuMode === 'horizontal' ? (
+                                <div id="menu">{menu}</div>
+                            ) : null}
                         </div>
                     </Col>
                 </Row>

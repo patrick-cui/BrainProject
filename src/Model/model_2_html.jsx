@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 const __html = require('./model2.html.js');
 const template = { __html: __html };
 

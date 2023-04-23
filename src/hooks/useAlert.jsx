@@ -10,7 +10,7 @@ export default function useAlert() {
 
     // State: contact
     const [alert, setAlert] = useState(contactStatus.IDLE);
-    const [message, setMessage] = useState("");
+    const [message, setMessage] = useState('');
 
     // check
     const isIdle = () => {
@@ -26,20 +26,29 @@ export default function useAlert() {
     };
 
     // switch
-    const switchToIdle = (msg) => {
+    const switchToIdle = msg => {
         setAlert(contactStatus.IDLE);
         setMessage(msg);
     };
 
-    const switchToSuccess = (msg) => {
+    const switchToSuccess = msg => {
         setAlert(contactStatus.SUCCESS);
         setMessage(msg);
     };
 
-    const switchToFailure = (msg) => {
+    const switchToFailure = msg => {
         setAlert(contactStatus.FAILURE);
         setMessage(msg);
     };
 
-    return { alert, message, isIdle, isSuccess, isFailure, switchToIdle, switchToSuccess, switchToFailure };
+    return {
+        alert,
+        message,
+        isIdle,
+        isSuccess,
+        isFailure,
+        switchToIdle,
+        switchToSuccess,
+        switchToFailure,
+    };
 }

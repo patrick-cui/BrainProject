@@ -18,7 +18,7 @@ class UploadDataForm extends React.Component {
             if (!err) {
                 console.log('Received values of form: ', values);
             }
-            this.props.history.push("/csv");
+            this.props.history.push('/csv');
         });
     }
 

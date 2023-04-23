@@ -18,10 +18,10 @@ class Home extends React.PureComponent {
         return (
             <DocumentTitle title="CentileBrain">
                 <div>
-                    <Header/>
+                    <Header />
                     <div className="home-wrapper">
-                        <MainBanner/>
-                        <FeaturesPage/>
+                        <MainBanner />
+                        <FeaturesPage />
                     </div>
                     <Footer></Footer>
                 </div>

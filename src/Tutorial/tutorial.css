@@ -1,13 +1,13 @@
-.tutorialNav{
+.tutorialNav {
     position: relative;
     margin: 50px auto 0;
     width: 800px;
     height: 50px;
     background: #fafafa;
     border-radius: 8px;
-    box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
 }
-.tutorialLink{
+.tutorialLink {
     font-size: 15px;
     color: black;
     text-decoration: none;
@@ -38,24 +38,26 @@ nav .animation {
     /*transition: all .5s ease 0s !important;*/
 }
 
-nav .start-volume,.tutorial1:hover~.animation {
+nav .start-volume,
+.tutorial1:hover ~ .animation {
     width: 200px !important;
     left: 0 !important;
 }
 
-nav .start-thickness,.tutorial2:hover~.animation {
+nav .start-thickness,
+.tutorial2:hover ~ .animation {
     width: 200px !important;
     left: 200px !important;
 }
 
-nav .start-area,.tutorial3:hover~.animation {
+nav .start-area,
+.tutorial3:hover ~ .animation {
     width: 200px !important;
     left: 400px !important;
 }
 
-nav .start-brainAge,.tutorial4:hover~.animation {
+nav .start-brainAge,
+.tutorial4:hover ~ .animation {
     width: 200px !important;
     left: 600px !important;
 }
-
-

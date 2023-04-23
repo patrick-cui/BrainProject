@@ -1,37 +1,34 @@
-import "./card-style.css"
+import './card-style.css';
 
-import React from 'react'
+import React from 'react';
 
 export default function Card(props) {
     if (props.imgsrc == null) {
-        return(
-            <div className="card text-center" >
+        return (
+            <div className="card text-center">
                 <div className="overflow">
-                    <img src={props.imgsrc} alt="team member" className="card-img-top" style={{display:"none"}}/>
+                    <img
+                        src={props.imgsrc}
+                        alt="team member"
+                        className="card-img-top"
+                        style={{ display: 'none' }}
+                    />
                 </div>
-                <div className="card-body text-dark" style={{display:"none"}}>
-                    <h4 className="card-title">
-                        {props.name}
-                    </h4>
-                    <p className="card-text text-secondary">
-                        {props.title}
-                    </p>
+                <div className="card-body text-dark" style={{ display: 'none' }}>
+                    <h4 className="card-title">{props.name}</h4>
+                    <p className="card-text text-secondary">{props.title}</p>
                 </div>
             </div>
         );
     }
-    return(
+    return (
         <div className="card text-center">
             <div className="overflow">
                 <img src={props.imgsrc} alt="team member" className="card-img-top" />
             </div>
             <div className="card-body text-dark">
-                <h4 className="card-title">
-                    {props.name}
-                </h4>
-                <p className="card-text text-secondary">
-                    {props.title}
-                </p>
+                <h4 className="card-title">{props.name}</h4>
+                <p className="card-text text-secondary">{props.title}</p>
             </div>
         </div>
     );

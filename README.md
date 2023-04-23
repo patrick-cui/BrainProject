@@ -1,7 +1,7 @@
-
 ## Installing Dependencies
+
 ```
-$ npm i 
+$ npm i
 ```
 
 ## Development
