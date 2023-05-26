@@ -58,7 +58,7 @@ export default function ContactPage(props) {
         'terms': 'I agree to the terms of use and privacy policy.',
         'primary-action': 'Submit',
         'image':
-            'https://raw.githubusercontent.com/yixuanQicq/BrainProject/main/src/Contact/contact.png',
+            'https://centilebrainwebsiteimage.s3.amazonaws.com/contact.png',
         ...props.content,
     };
 

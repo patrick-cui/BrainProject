@@ -12,7 +12,7 @@ export default function Features() {
                     <Grid item xs={12}>
                         <Link to="/explore">
                             <img
-                                src="https://raw.githubusercontent.com/yixuanQicq/BrainProject/50add014ad94a08a6412abce038c75e098482865/src/Home/data/explore2.svg"
+                                src="https://centilebrainwebsiteimage.s3.amazonaws.com/explore2.svg"
                                 width="100%"
                             />
                         </Link>
@@ -29,7 +29,7 @@ export default function Features() {
                     <Grid item xs={12}>
                         <Link to="/model">
                             <img
-                                src="https://raw.githubusercontent.com/yixuanQicq/BrainProject/50add014ad94a08a6412abce038c75e098482865/src/Home/data/iStock-1251018502%20Upload.svg"
+                                src="https://centilebrainwebsiteimage.s3.amazonaws.com/iStock-1251018502%20Upload.svg"
                                 width="100%"
                             />
                         </Link>
@@ -46,7 +46,7 @@ export default function Features() {
                     <Grid item xs={12}>
                         <Link to="/model2">
                             <img
-                                src="https://raw.githubusercontent.com/yixuanQicq/BrainProject/50add014ad94a08a6412abce038c75e098482865/src/Home/data/iStock-1155106799_Model.svg"
+                                src="https://centilebrainwebsiteimage.s3.amazonaws.com/iStock-1155106799_Model.svg"
                                 width="100%"
                             />
                         </Link>
@@ -66,7 +66,7 @@ export default function Features() {
                     <Grid item xs={12}>
                         <Link to="/team">
                             <img
-                                src="https://raw.githubusercontent.com/yixuanQicq/BrainProject/50add014ad94a08a6412abce038c75e098482865/src/Home/data/iStock-966858736_Team.svg"
+                                src="https://centilebrainwebsiteimage.s3.amazonaws.com/iStock-966858736_Team.svg"
                                 width="100%"
                             />
                         </Link>
@@ -83,7 +83,7 @@ export default function Features() {
                     <Grid item xs={12}>
                         <Link to="/publications">
                             <img
-                                src="https://raw.githubusercontent.com/yixuanQicq/BrainProject/50add014ad94a08a6412abce038c75e098482865/src/Home/data/iStock-1323841513%20publications.svg"
+                                src="https://centilebrainwebsiteimage.s3.amazonaws.com/iStock-1323841513%20publications.svg"
                                 width="100%"
                             />
                         </Link>
@@ -100,7 +100,7 @@ export default function Features() {
                     <Grid item xs={12}>
                         <Link to="/brainAGE">
                             <img
-                                src="https://raw.githubusercontent.com/yixuanQicq/BrainProject/main/src/Home/data/brainAge.jpeg"
+                                src="https://centilebrainwebsiteimage.s3.amazonaws.com/brainAge.jpeg"
                                 width="100%"
                             />
                         </Link>
@@ -128,7 +128,7 @@ export default function Features() {
                     <Grid item xs={12}>
                         <Link to="/engima">
                             <img
-                                src="https://raw.githubusercontent.com/yixuanQicq/BrainProject/main/src/Home/data/enigma.jpeg"
+                                src="https://centilebrainwebsiteimage.s3.amazonaws.com/enigma.jpeg"
                                 width="100%"
                             />
                         </Link>

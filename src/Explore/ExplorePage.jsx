@@ -26,13 +26,13 @@ export default function ExplorePage(props) {
                 <Grid item xs={12} md={1}></Grid>
                 <Grid item xs={12} md={5}>
                     <img
-                        src="https://raw.githubusercontent.com/yixuanQicq/BrainProject/main/src/Explore/data/age_distribution_new.jpg"
+                        src="https://centilebrainwebsiteimage.s3.amazonaws.com/age_distribution_new.jpg"
                         width="100%"
                     />
                 </Grid>
                 <Grid item xs={12} md={5}>
                     <img
-                        src="https://raw.githubusercontent.com/yixuanQicq/BrainProject/main/src/Explore/data/CentileBrain_Map.jpg"
+                        src="https://centilebrainwebsiteimage.s3.amazonaws.com/CentileBrain_Map.jpg"
                         width="100%"
                     />
                 </Grid>

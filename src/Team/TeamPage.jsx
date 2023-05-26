@@ -28,7 +28,7 @@ export default function TeamPage(props) {
                                 >
                                     <Card
                                         imgsrc={
-                                            'https://raw.githubusercontent.com/yixuanQicq/BrainProject/main/src/Team/photos/sophia.jpg'
+                                            'https://centilebrainwebsiteimage.s3.amazonaws.com/sophia.jpg'
                                         }
                                         name={'Dr. Sophia Frangou'}
                                         title={'Neuroscientist'}
@@ -43,7 +43,7 @@ export default function TeamPage(props) {
                                 >
                                     <Card
                                         imgsrc={
-                                            'https://raw.githubusercontent.com/yixuanQicq/BrainProject/main/src/Team/photos/Paull.png'
+                                            'https://centilebrainwebsiteimage.s3.amazonaws.com/Paull.png'
                                         }
                                         name={'Dr. Paul Thompson'}
                                         title={'Data Scientist'}
@@ -58,7 +58,7 @@ export default function TeamPage(props) {
                                 >
                                     <Card
                                         imgsrc={
-                                            'https://raw.githubusercontent.com/yixuanQicq/BrainProject/main/src/Team/photos/ruiyang2.jpg'
+                                            'https://centilebrainwebsiteimage.s3.amazonaws.com/ruiyang2.jpg'
                                         }
                                         name={'Dr. Ruiyang Ge'}
                                         title={'Data Scientist'}
@@ -78,7 +78,7 @@ export default function TeamPage(props) {
                                 >
                                     <Card
                                         imgsrc={
-                                            'https://raw.githubusercontent.com/yixuanQicq/BrainProject/main/src/Team/photos/Shalaila.jpg'
+                                            'https://centilebrainwebsiteimage.s3.amazonaws.com/Shalaila.jpg'
                                         }
                                         name={'Dr. Shalaila Haas'}
                                         title={'Neuroscientist'}
@@ -93,7 +93,7 @@ export default function TeamPage(props) {
                                 >
                                     <Card
                                         imgsrc={
-                                            'https://raw.githubusercontent.com/yixuanQicq/BrainProject/main/src/Team/photos/Amirhossein.jpeg'
+                                            'https://centilebrainwebsiteimage.s3.amazonaws.com/Amirhossein.jpeg'
                                         }
                                         name={'Dr. Amirhossein Modabbernia'}
                                         title={'Clinical Neuroscientist'}
@@ -108,7 +108,7 @@ export default function TeamPage(props) {
                                 >
                                     <Card
                                         imgsrc={
-                                            'https://raw.githubusercontent.com/yixuanQicq/BrainProject/main/src/Team/photos/yuetong.jpg'
+                                            'https://centilebrainwebsiteimage.s3.amazonaws.com/yuetong.jpg'
                                         }
                                         name={'Yuetong Yu'}
                                         title={'Data Scientist'}
@@ -128,7 +128,7 @@ export default function TeamPage(props) {
                                 >
                                     <Card
                                         imgsrc={
-                                            'https://raw.githubusercontent.com/yixuanQicq/BrainProject/main/src/Team/photos/yixuan.jpg'
+                                            'https://centilebrainwebsiteimage.s3.amazonaws.com/yixuan.jpg'
                                         }
                                         name={'Yi Xuan Qi'}
                                         title={'Computer Scientist'}
@@ -143,7 +143,7 @@ export default function TeamPage(props) {
                                 >
                                     <Card
                                         imgsrc={
-                                            'https://raw.githubusercontent.com/yixuanQicq/BrainProject/main/src/Team/photos/vera.jpg'
+                                            'https://centilebrainwebsiteimage.s3.amazonaws.com/vera.jpg'
                                         }
                                         name={'Vera Fan'}
                                         title={'Data Scientist '}
@@ -158,7 +158,7 @@ export default function TeamPage(props) {
                                 >
                                     <Card
                                         imgsrc={
-                                            'https://raw.githubusercontent.com/yixuanQicq/BrainProject/main/src/Team/photos/Faye.jpg'
+                                            'https://centilebrainwebsiteimage.s3.amazonaws.com/Faye.jpg'
                                         }
                                         name={'Faye New'}
                                         title={'Cognitive Neuroscientist '}
@@ -178,7 +178,7 @@ export default function TeamPage(props) {
                                 >
                                     <Card
                                         imgsrc={
-                                            'https://raw.githubusercontent.com/yixuanQicq/BrainProject/main/src/Team/photos/chuntong.jpg'
+                                            'https://centilebrainwebsiteimage.s3.amazonaws.com/chuntong.jpg'
                                         }
                                         name={'Chuntong Gao'}
                                         title={'Computer Scientist'}
@@ -193,7 +193,7 @@ export default function TeamPage(props) {
                                 >
                                     <Card
                                         imgsrc={
-                                            'https://raw.githubusercontent.com/yixuanQicq/BrainProject/main/src/Team/photos/shiyu.jpg'
+                                            'https://centilebrainwebsiteimage.s3.amazonaws.com/shiyu.jpg'
                                         }
                                         name={'Shiyu Chen'}
                                         title={'Computer Scientist'}
