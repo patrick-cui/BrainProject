@@ -5,7 +5,7 @@ import Map from './map';
 function Footer() {
     return (
         <footer id="footer" className="dark">
-            <Row className="bottom-bar" style={{height: 250}}>
+            <Row className="bottom-bar">
                 {/*<span style={{ marginRight: 12 }}>*/}
                 {/*    Copyright © Djavad Mowafaghian Centre for Brain Health*/}
                 {/*</span>*/}
