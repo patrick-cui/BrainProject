@@ -13,6 +13,8 @@ function Map() {
     // //script.async = true
     script.type="text/javascript" 
     script.id="clustrmaps" 
+    script.onload = () => this.scriptLoaded();
+
 
 
 

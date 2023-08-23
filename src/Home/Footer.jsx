@@ -10,9 +10,9 @@ function Footer() {
                 {/*    Copyright © Djavad Mowafaghian Centre for Brain Health*/}
                 {/*</span>*/}
                 <body>
-                <div>
-                    {/* <Map></Map> */}
-                </div>
+                {/* <div>
+                    <Map></Map>
+                </div> */}
                 </body>
             </Row>
         </footer>
