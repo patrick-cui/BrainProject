@@ -11,7 +11,7 @@ function Footer() {
                 {/*</span>*/}
                 <body>
                 <div>
-                    <Map></Map>
+                    {/* <Map></Map> */}
                 </div>
                 </body>
             </Row>
