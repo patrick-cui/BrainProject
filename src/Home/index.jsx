@@ -8,6 +8,8 @@ import Footer from './Footer';
 import Header from './Header';
 import MainBanner from './MainBanner';
 
+import Map from './map';
+
 class Home extends React.PureComponent {
     scrollToUploadData(ref) {
         console.log(ref);
@@ -23,6 +25,7 @@ class Home extends React.PureComponent {
                         <MainBanner />
                         <FeaturesPage />
                     </div>
+                    
                     <Footer></Footer>
                 </div>
             </DocumentTitle>
